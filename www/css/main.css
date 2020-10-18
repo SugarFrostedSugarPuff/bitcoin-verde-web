@@ -1,0 +1,141 @@
+body {
+    background-color: #303030;
+    color: #F0F0F0;
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:active, a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:hover {
+    color: #F0F0F0;
+}
+
+section {
+    min-height: 75vh;
+    background-color: #303030;
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+.button {
+    padding: 0.5em;
+    border: solid 2px #FFFFFF;
+    border-radius: 0.25em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+nav {
+    background-color: #303030;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #F0F0F0;
+    margin: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+nav li a {
+    cursor: pointer;
+}
+
+nav#navigation ul > li:first-child {
+    flex-grow: 5;
+    text-align: left;
+    padding-left: 1em;
+}
+nav#navigation > ul > li > a {
+    display: inline-block;
+}
+nav#navigation > ul > li > a {
+    display: inline-block;
+    padding-left: 0.2em;
+    padding-right: 0.5em;
+}
+nav#navigation > ul > li > a:hover::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+nav#navigation > ul > li > a::after {
+    content: '';
+    margin-top: 2px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+section.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section#home {
+    text-align: center;
+}
+section#home h1 {
+    display: none;
+}
+section#home img {
+    width: 60%;
+}
+section#home h2 {
+    width: 50%;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+
+section#mission {
+    background-color: #006837;
+}
+
+
+section#explorer {
+    background-color: #303030;
+}
+
+section#footer {
+    background-color: #202020;
+    min-height: 10em;
+}
