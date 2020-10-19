@@ -16,10 +16,13 @@ a:hover {
 }
 
 section {
-    min-height: 75vh;
+    min-height: 50vh;
     background-color: #303030;
     box-sizing: border-box;
     padding: 2em;
+}
+section:first-of-type {
+    min-height: 75vh;
 }
 
 h1 {
@@ -112,6 +115,7 @@ section.vertical-center {
 
 section#home {
     text-align: center;
+    background-color: #252525;
 }
 section#home h1 {
     display: none;
@@ -129,13 +133,62 @@ section#home h2 {
 section#mission {
     background-color: #006837;
 }
-
+section#mission h2,
+section#mission p {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+section#mission h2 {
+    font-size: 1.5em;
+    font-family: 'Audiowide', cursive;
+}
+section#mission p {
+    font-size: 1em;
+    text-decoration: italic;
+    margin-bottom: 3em;
+}
+section#mission h2:nth-of-type(odd),
+section#mission p:nth-of-type(odd) {
+    text-align: left;
+}
+section#mission h2:nth-of-type(even),
+section#mission p:nth-of-type(even) {
+    text-align: right;
+    margin-left: 50%;
+}
 
 section#explorer {
     background-color: #303030;
 }
 
+section#system-requirements {
+    background-color: #101010;
+    font-size: 1.5em;
+    text-align: center;
+}
+section#system-requirements h2 {
+    font-family: 'Audiowide', cursive;
+}
+section#system-requirements ul {
+    list-style: katakana;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 0.95em;
+    margin-bottom: 2em;
+}
+section#system-requirements ul li {
+    padding-left: 1em;
+}
+section#system-requirements p {
+    font-size: 0.5em;
+    margin: 0em;
+    padding: 0;
+}
+
 section#footer {
-    background-color: #202020;
+    background-color: #252525;
     min-height: 10em;
 }
