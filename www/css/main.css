@@ -18,6 +18,12 @@ a:hover {
     color: #F0F0F0;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 section {
     min-height: 50vh;
     background-color: #303030;
