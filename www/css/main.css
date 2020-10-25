@@ -132,31 +132,48 @@ section#home h2 {
 
 section#mission {
     background-color: #006837;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-section#mission h2,
-section#mission p {
+section#mission > h1 {
+    display: block;
+    flex-basis: 100%;
+    font-size: 1em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+section#mission > .statement {
+    flex-basis: 50%;
+    flex-grow: 1;
+    box-sizing: border-box;
     display: inline-block;
-    width: 50%;
+}
+section#mission > .statement img {
+    float: left;
+    width: 6em;
+    margin-top: -1em;
+    margin-right: 1em;
+}
+section#mission > .statement:nth-of-type(even) {
+    text-align: right;
+}
+section#mission > .statement:nth-of-type(even) img {
+    float: right;
+    margin-left: 2em;
+}
+section#mission > .statement h2 {
     margin-bottom: 0;
     margin-top: 0;
-}
-section#mission h2 {
     font-size: 1.5em;
     font-family: 'Audiowide', cursive;
 }
-section#mission p {
+section#mission > .statement p {
     font-size: 1em;
     text-decoration: italic;
     margin-bottom: 3em;
-}
-section#mission h2:nth-of-type(odd),
-section#mission p:nth-of-type(odd) {
-    text-align: left;
-}
-section#mission h2:nth-of-type(even),
-section#mission p:nth-of-type(even) {
-    text-align: right;
-    margin-left: 50%;
 }
 
 section#explorer {
@@ -191,4 +208,27 @@ section#system-requirements p {
 section#footer {
     background-color: #252525;
     min-height: 10em;
+    text-align: center;
+    font-size: 0.85em;
+}
+section#footer #bch-address {
+    margin-top: 0em;
+    margin-bottom: 2em;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+section#footer #bch-address a > span.label {
+    letter-spacing: 0px;
+    padding-right: 0.25em;
+}
+section#footer #bch-address a > mark {
+    font-weight: bold;
+    background-color: unset;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 680px) {
+    section#mission > .statement {
+        flex-basis: 100%;
+    }
 }
