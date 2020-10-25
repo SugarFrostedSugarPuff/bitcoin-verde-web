@@ -179,6 +179,24 @@ section#mission > .statement p {
 section#explorer {
     background-color: #303030;
 }
+section#explorer h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+section#explorer img {
+    border: solid 3px #262626;
+    border-radius: 9px;
+    width: 33%;
+    float: left;
+    margin-right: 2em;
+}
+section#explorer p.emphasis {
+    font-size: 1.5em;
+    text-align: center;
+}
+section#explorer p.emphasis a {
+    color: #009344;
+}
 
 section#system-requirements {
     background-color: #101010;
