@@ -125,6 +125,7 @@ section.vertical-center {
 section#home {
     text-align: center;
     background-color: #252525;
+    background: linear-gradient(135deg, #252525 0%, #303030 100%);
 }
 section#home h1 {
     display: none;
@@ -141,6 +142,7 @@ section#home h2 {
 
 section#mission {
     background-color: #006837;
+    background: linear-gradient(-135deg, #006837 0%, #005F32 100%);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -193,6 +195,7 @@ section#mission > .statement p {
 
 section#explorer {
     background-color: #303030;
+    background: linear-gradient(135deg, #303030 0%, #353535 100%);
 }
 section#explorer h1 {
     text-align: center;
@@ -207,7 +210,7 @@ section#explorer img {
 }
 section#explorer p.emphasis {
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
 }
 section#explorer p.emphasis a {
     color: #009344;
@@ -215,6 +218,7 @@ section#explorer p.emphasis a {
 
 section#system-requirements {
     background-color: #101010;
+    background: linear-gradient(135deg, #101010 0%, #151515 100%);
     font-size: 1.5em;
     text-align: center;
 }
@@ -288,6 +292,7 @@ section#footer #bch-address a > mark {
     section#explorer p.emphasis {
         margin-top: 3em;
         clear: left;
+        text-align: center;
     }
 }
 
