@@ -35,7 +35,8 @@ section:first-of-type {
 }
 
 h1 {
-    font-family: 'Audiowide', cursive;
+    font-family: 'Orbitron', cursive;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -188,7 +189,8 @@ section#mission > .statement h2 {
     margin-bottom: 0;
     margin-top: 0;
     font-size: 1.5em;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Orbitron', cursive;
+    letter-spacing: 1px;
 }
 section#mission > .statement p {
     font-size: 1em;
@@ -226,7 +228,8 @@ section#system-requirements {
     text-align: center;
 }
 section#system-requirements h2 {
-    font-family: 'Audiowide', cursive;
+    font-family: 'Orbitron', cursive;
+    letter-spacing: 1px;
 }
 section#system-requirements ul {
     list-style: katakana;
