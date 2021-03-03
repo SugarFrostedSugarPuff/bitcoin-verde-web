@@ -25,7 +25,6 @@ a:hover {
 }
 
 section {
-    min-height: 50vh;
     background-color: #303030;
     box-sizing: border-box;
     padding: 2em;
@@ -35,15 +34,20 @@ section:first-of-type {
 }
 
 h1 {
-    font-family: 'Orbitron', cursive;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 1.25em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
 }
+h3{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-size:  1em;
+}
+
 
 .button {
     padding: 0.5em;
@@ -52,7 +56,6 @@ h2 {
     display: inline-block;
     cursor: pointer;
 }
-
 .no-break {
     white-space: nowrap;
 }
@@ -86,9 +89,9 @@ nav li a {
 }
 
 nav#navigation ul > li:first-child {
-    flex-grow: 5;
+    flex-grow: 10;
     text-align: left;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 nav#navigation > ul > li > a {
     display: inline-block;
@@ -136,10 +139,124 @@ section#home img {
     width: 60%;
 }
 section#home h2 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 1.25em;
     width: 50%;
     margin: auto;
     margin-top: 1.5em;
     margin-bottom: 3em;
+}
+
+section#goals-head {
+    min-height: 15vh;
+    background-color: #252525
+}
+section#goals-head h1{
+    display: block;
+    text-align: left;
+    font-size: 6em;
+    padding-top: 15vh;
+    margin: 5px;
+}
+section#goals-head .about-header {
+    max-width:  1100px;
+    margin:  auto;
+    padding-right:  5%;
+}
+
+section#goals {
+    max-width:1250px;
+    margin:  auto;
+    padding-left:  5%;
+    padding-right:  5%;
+}
+section#goals .focus {
+    font-size:  1.2em;
+}
+section#goals ul {
+    list-style-type:  none;
+    font-size:  1.25em;
+    line-height: 1.5em;
+}
+section#goals a:hover {
+    color:#009344 !important;
+}
+section#roadmap {
+    max-width: 1250px;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+section#roadmap .focus {
+    font-size: 1.2em;
+}
+section#roadmap ul{
+    list-style-type:  none;
+    font-size:  1.25em;
+    line-height: 1.5em;
+}
+section#non-indexing h2 {
+    padding-top: 3vh;
+}
+section#non-indexing h3 {
+    padding-top: 3vh;
+}
+section#non-indexing ol li{
+    padding: 5px;
+}
+section#non-indexing .about-section-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+section#block-temp h3 {
+    padding-top: 3vh;
+}
+
+section#complete h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+}
+section#under-development h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+}
+section#under-development .feature {
+    padding-bottom: 1em;
+}
+
+.about-section {
+    max-width:  1100px;
+    margin:  auto;
+    padding-left:  5%;
+    padding-right:  5%;
+}
+
+.bar-wrapper {
+    /* background-color: #003A1B; */
+}
+.bar {
+    background-color: #009344;
+    min-height: 3em;
+    max-height: 3em;
+    width: 63%;
+}
+
+section#block-temp ol {
+    padding: 5px;
+}
+section#block-temp ol li {
+    padding-bottom: 10px;
+}
+section#block-temp ul li {
+    padding-bottom: 0px;
+}
+section#block-temp .nested-list {
+    line-height: 1.25em;
 }
 
 section#mission {
@@ -154,10 +271,17 @@ section#mission {
 section#mission > h1 {
     display: block;
     flex-basis: 100%;
-    font-size: 1em;
     margin: auto;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+section#mission > h2 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    margin: auto;
+    font-size: 2em;
+    flex-basis: 100%;
     text-align: center;
 }
 section#mission > .statement {
@@ -189,13 +313,14 @@ section#mission > .statement h2 {
     margin-bottom: 0;
     margin-top: 0;
     font-size: 1.5em;
-    font-family: 'Orbitron', cursive;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
 section#mission > .statement p {
     font-size: 1em;
     text-decoration: italic;
     margin-bottom: 3em;
+    max-width: 550px;
 }
 
 section#explorer {
@@ -212,6 +337,7 @@ section#explorer img {
     width: 33%;
     float: left;
     margin-right: 2em;
+    margin-left: 10%
 }
 section#explorer p.emphasis {
     font-size: 1.5em;
@@ -220,15 +346,54 @@ section#explorer p.emphasis {
 section#explorer p.emphasis a {
     color: #009344;
 }
+section#explorer .right-text{
+    float: right;
+    text-align: left;
+    max-width: 40%;
+    margin-right: 10%;
+    font-size: large;
+}
+
+section#about {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+}
+section#about p {
+    font-size:  1.15em;
+}
+section#about h2{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+section#about .group-info{
+    width: 65%;
+    margin-right: 5em;
+}
+section#about .call-out{
+    width:  35%;
+    font-size: 1.3em;
+    text-align:     center;
+    padding-top:    10vh;
+}
+section#about .call-out a{
+   color: #009344;
+}
+
 
 section#system-requirements {
     background-color: #101010;
     background: linear-gradient(135deg, #101010 0%, #151515 100%);
     font-size: 1.5em;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
 }
 section#system-requirements h2 {
-    font-family: 'Orbitron', cursive;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
 section#system-requirements ul {
@@ -239,13 +404,39 @@ section#system-requirements ul {
     font-size: 0.95em;
     margin-bottom: 2em;
 }
+section#system-requirements .tech-list ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+section#system-requirements .tech-list ul li{
+    text-align: center;
+}
+section#system-requirements .tech-list ul li a:hover{
+    color:#009344;
+}
+section#system-requirements .tech-list ul p{
+    display: none;
+    padding: .25em 1.5em 1.5em;
+    margin: auto;
+    text-align: left;
+    font-size: large;
+}
 section#system-requirements ul li {
     padding-left: 1em;
+    margin: auto;
+    text-align: left;
 }
 section#system-requirements p {
     font-size: 0.5em;
     margin: 0em;
     padding: 0;
+}
+section#system-requirements .sys-features {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+section#system-requirements p#thin {
+    display: none;
 }
 
 section#footer {
@@ -279,6 +470,25 @@ section#footer #bch-address a > mark {
     color: #FFFFFF;
 }
 
+
+.fadeinup {
+    animation: fadeInUp 1200ms .2s backwards;
+}
+.fadein {
+    animation: fadeIn 1250ms .7s both;
+}
+.fadeinleft {
+    animation: fadeInLeft 1500ms .1s backwards;
+}
+
+
+@media only screen and (min-width: 950px) {
+    section#mission {
+    padding-left: 17%;
+    padding-right: 17%;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     section#home img {
         width: 90%;
@@ -300,11 +510,24 @@ section#footer #bch-address a > mark {
         display: inline-block;
         margin: 0 !important;
     }
-
     section#explorer p.emphasis {
         margin-top: 3em;
         clear: left;
         text-align: center;
+    }
+    section#about {
+        display: block;
+    }
+    section#about .group-info{
+        width: 90%;
+        margin: auto;
+    }
+    section#about .call-out{
+        width:  90%;
+        margin: auto;
+    }
+    section#system-requirements .sys-features {
+        flex-basis: 100%;
     }
 }
 
@@ -325,7 +548,17 @@ section#footer #bch-address a > mark {
         float: none;
         margin-left: 0;
         margin-right: 0;
+        width: 50%;
     }
+    section#explorer p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    section#explorer .right-text{
+    text-align: center;
+    max-width: 88%;
+    margin-right: 6%
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -350,3 +583,13 @@ section#footer #bch-address a > mark {
         display: none;
     }
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }

@@ -11,10 +11,12 @@
         <link rel="shortcut icon" type="image/png" sizes="32x32" href="/img/icon-32.png" />
         <link rel="shortcut icon" type="image/png" sizes="16x16" href="/img/icon-16.png" />
 
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&amp;display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+        <script type="text/javascript" src="/js/main.js"></script>
 
         <title>Bitcoin Verde</title>
     </head>
@@ -24,17 +26,19 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#explorer">Explorer</a></li>
+                <li><a href="/about.html">Goals</a></li>
                 <li><a href="#system-requirements">System Requirements</a></li>
                 <li><a href="//donate.bitcoinverde.org">Donate</a></li>
             </ul>
         </nav>
         <section class="vertical-center clearfix" id="home">
-            <div>
+            <div class="fadeinup">
                 <h1>Bitcoin Verde</h1>
                 <img src="/img/logo-dark-banner.png" />
                 <h2>Become part of the best <span class="no-break">peer-to-peer</span> electronic cash network.  Run a <span class="no-break">Bitcoin Cash</span> server today.</h2>
-
-                <div class="button"><a href="https://github.com/softwareverde/bitcoin-verde/releases/tag/v2.0.0">Download v2.0.0</a></div>
+            </div>
+            <div class="fadeinup">
+                <div class="button"><a href="https://github.com/softwareverde/bitcoin-verde/releases/tag/v2.0.1">Download v2.0.1</a></div>
             </div>
         </section>
         <section class="clearfix" id="mission">
@@ -64,15 +68,40 @@
                 <p>Supports over 200 transactions per second.</p>
             </div>
         </section>
+        <section class="clearfix" id="about">
+            <div class="group-info">
+                <h2>Our Group</h2>
+                <p>Bitcoin Verde is a ground-up build written in Java and maintained by the Software Verde, LLC development team. Software Verde is a custom software development company from Columbus, Ohio dedicated to developing innovative technology that serves their community, clients, and friends.</p>
+                <p>Bitcoin Verde provides the BCH network with a full-node implementation, a block explorer, and development library. Our ambitions for the future are to continue to make improvements to our implementation and eventually provide wallet and mining-pool modules.</p>
+                <p>Our team is primarily composed of Josh Green, Andrew Groot, Eliot Lesar, and John Jamiel.</p>
+            </div>
+            <div class="call-out">
+                <p>Bitcoin Verde is an open-source project supported by our community. Ask questions about running a node or get to know the team on the <a href="https://t.me/bitcoinverde">Community Telegram</a>.</p>
+            </div>
+        </section>
+
         <section class="clearfix" id="explorer">
             <h1>Built-In SLP-Enabled Explorer</h1>
             <img src="/img/explorer.png" />
-            <p>Bitcoin Verde's bundled explorer is integrated directly into the node&mdash;no other software needed.</p>
-            <p>The integrated indexer is compact and fast, engineered to keep pace with network's most rapid traffic.</p>
-            <p class="emphasis">View a live version at <a href="//explorer.bitcoinverde.org">explorer.bitcoinverde.org</a>.</p>
+            <div class="right-text">
+                <p>Bitcoin Verde's bundled explorer is integrated directly into the node&mdash;no other software needed.</p>
+                <p>The integrated indexer is compact and fast, engineered to keep pace with network's most rapid traffic.</p>
+                <p class="emphasis">View a live version at <a href="//explorer.bitcoinverde.org">explorer.bitcoinverde.org</a>.</p>
+            </div>
         </section>
-        <section class="vertical-center clearfix" id="system-requirements">
-            <div>
+        <section class="clearfix" id="system-requirements">
+            <div class="sys-features" style="display: none;">
+                <h2>Technical Features</h2>
+                <div class="tech-list">
+                    <ul>
+                        <li>
+                            <a href="javascript:void();" onclick="toggleVisibility('api');">Advanced API</a>
+                            <p id="api">The Advanced API makes it possible to run much richer queries that would otherwise be difficult with JSON-RPC-based Nodes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div  class="sys-features">
                 <h2>Default System Requirements</h2>
                 <ul>
                     <li>2 vCPU</li>
