@@ -52,7 +52,7 @@
                 <ul>
                     <li><a href="#rpc">RPC compatibility</a></li>
                     <li><a href="#utxo">UTXO Commitments</a></li>
-                    <li><a href="#">Double spend proofs</a></li>
+                    <li><a href="#proofs">Double spend proofs (COMPLETE)</a></li>
                     <li><a href="#fulcrum">Electron Cash compatibility</a></li>
                     <li><a href="#pruning">Pruning mode</a></li>
                     <li><a href="#pool">Complete mining pool software</a></li>
@@ -88,10 +88,6 @@
                         <p>By providing a validated hash of the UTXO-set at the time a block was created, UTXO commitments can be used to greatly reduce the time required to synchronize a node on startup. Functionally, this may be particularly useful for businesses interested in running their own node and for developers under time constraints. An example of this is the recent CoinParty Hackathon, where developers wanted to run a node for testing, but had limited time to set up.</p>
                         <p>The addition of compatible UTXO Commitments with BCHD will serve to strengthen Bitcoin Cash's utility as we work to further reduce all barriers of entry.</p>
                     </div>
-                    <div class="feature" id="proofs">
-                        <h3>Double Spend Proofs</h3>
-                        <p>Double spend proofs provide an elevated user experience by increasing merchants' and wallet-users' willingness to accept unconfirmed transactions. This works by allowing nodes to send and receive a small, standardized message with proof that a sender has signed two separate transactions in an attempt to spend the same BCH twice. This proof can then be further validated by other nodes and users of the network to verify its claim.</p>
-                    </div>
                     <div class="feature" id="fulcrum">
                         <h3>Electron Cash (FULCRUM API) Compatibility</h3>
                         <p>Bitcoin Verde will be upgraded to be fully compatible with the Electrum Cash 1.4.4 protocol. The Fulcrum API is a drop in replacement for ElectrumX/ElectronX and is fully compatible at the protocol level with Electrum Cash.</p>
@@ -110,8 +106,17 @@
             <h2>Complete Features</h2>
         </section>
 
+        <section class="clearfix" id="proofs">
+        	<div class="about-section">
+                <h2>Double Spend Proofs</h2>
+                <p>Double spend proofs provide an elevated user experience by increasing merchants' and wallet-users' willingness to accept unconfirmed transactions. This works by allowing nodes to send and receive a small, standardized message with proof that a sender has signed two separate transactions in an attempt to spend the same BCH twice. This proof can then be further validated by other nodes and users of the network to verify its claim.</p>
+            </div>
+        </section>
+
         <section class="clearfix" id="block-temp">
+
             <div class="about-section">
+
                 <h2>Block Template Validation Service - The BitBalancer</h2>
                 <p>This block template validation service is a reverse-proxy/load balancer used to reduce the risk of miners creating an invalid block to near-zero.  This is achieved by first validating the template block against other implementations before any work is performed on the block template.</p>
                 <h3>How it works</h3>
